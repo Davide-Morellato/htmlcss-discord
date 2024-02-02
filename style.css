@@ -194,11 +194,15 @@ img{
 }
 
 .col-40{
-    flex-basis: 40%;
+    flex-basis: calc(100% / 3);
 }
 
 .col-15{
-    flex-basis: 15%;
+    flex-basis: calc(100% / 6);
+}
+
+.white{
+    color: white;
 }
 
 .u-border{
