@@ -1,0 +1,158 @@
+/* Reset Rules */
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+ul, ol, menu{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: currentColor;
+}
+
+img{ 
+    max-width: 100%;
+}
+
+.container{
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+
+/* Layout */
+
+.column-20{
+    flex-basis:20%;
+}
+
+.column-30{
+    flex-basis:30%;
+}
+
+.column-40{
+    flex-basis: calc(100% / 2.5);
+}
+
+.column-x{
+    flex-grow: 1;
+}
+
+.column-70{
+    flex-basis: 70%;
+}
+
+.column-80{
+    flex-basis: 80%;
+}
+
+.column-100{
+    flex-basis: 100%;
+}
+
+
+
+/* Structure */
+
+.container{
+    padding: 10px;
+}
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+[class^='column']{
+    text-align: center;
+}
+
+.jc-center{
+    justify-content: center;
+}
+
+.reverse{
+    flex-direction: row-reverse;
+}
+
+.low-pad{
+    padding-top: 5px;
+}
+
+.u-border{
+    border-top: 0.5px solid white;
+}
+
+.no-padding{
+    padding-bottom: 0;
+}
+
+.jc-sbetween{
+    justify-content: space-between;
+}
+
+.space-tb{
+    padding: 10px 0;
+}
+
+
+
+/* Background-color */
+
+.main-header{
+    background-color: aqua;
+}
+
+.bg-blue{
+    background-color: blue;
+}
+
+.bg-lightgrey, .bg-lightgrey{
+    background-color: lightgrey;
+}
+
+.bg-lightslategrey{
+    background-color: lightslategray;
+}
+
+.bg-yellow{
+    background-color: rgb(255, 191, 0);
+}
+
+.bg-pink{
+    background-color: rgb(219, 122, 138);
+}
+
+.bg-cyan{
+    background-color: cyan;
+}
+
+.bg-green{
+    background-color: green;
+}
+
+
+
+
+
+
+/* DEBUG */
+
+.debug .container{
+    border: 2px solid black;
+}
+
+.debug .row{
+    border: 2px solid rgb(255, 1, 1);
+}
+
+.debug [class^='column']{
+    border: 2px dashed rgb(96, 4, 94);
+    padding: 10px;
+    min-height: 100px;
+}
