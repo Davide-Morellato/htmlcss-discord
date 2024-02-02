@@ -69,7 +69,16 @@ img{
 }
 
 [class^='column']{
-    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.line{
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    justify-content: center;
 }
 
 .jc-center{
