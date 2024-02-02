@@ -7,17 +7,17 @@
         <title>Discord Structure</title>
     </head>
 
-    <body class="debug">
+    <body class="debg">
 
             <!-- Intestazione -->
         <header class="main-header">
             <div class="container">
-                <div class="row bg-yellow">
-                    <a href="#" class="column-20 logo">
+                <nav class="row">
+                    <a href="#" class="logo">
                         <img src="./discord-assets/logo.svg" alt="discord logo">
                     </a>
                     
-                    <ul class="column-x link">
+                    <ul class="link">
                         <li>
                             <a href="#">Scarica</a>
                         </li>
@@ -35,26 +35,23 @@
                         </li>
                     </ul>
 
-                    <a href="#" class="column-20 login">Accedi</a>                    
-                </div>                
+                    <a href="#" class="login">Accedi</a>                    
+                </nav>                
             </div>    
         </header>
 
             <!-- Sezioni Principali -->
         <main>
-            <section class="bg-blue">
+            <section class="bg-img">
                 <div class="container">
                     <div class="row jc-center">
-                        <div class="column-80 bg-pink">
-
-                            <h1 class="text">Il tuo posto per parlare</h1>
-
-                            <p class="text">che tu faccia parte di un club scolastico, bla bla bla</p>
-
-                            <a href="#" class="iper">Scarica per Mac</a>
-
-                            <a href="#" class="iper">Apri Discord nel tuo browser</a>
-
+                        <div class="col-800">
+                                <h1 class="xfont">Il tuo posto per parlare</h1>
+                                <p class="t-pad">che tu faccia parte di un club scolastico, un gruppo di gamer, comunità artistica mondiale, o semplicente di un piccolo gruppo di amici che vuole passare il tempo assieme, Discord rende più facile chiacchierare ogni giorno e ritrovarsi più spesso.</p>
+                                <div class="choice t-pad">
+                                    <a href="#" class="bg-white">&#8595; Scarica per Mac</a>
+                                    <a href="#" class="bg-black">Apri Discord nel tuo browser</a>
+                                </div>
                         </div>
                     </div>         
                 </div>    
@@ -63,10 +60,13 @@
             <section>
                 <div class="container">
                     <div class="row">
-                        <div class="column-70 bg-cyan">
-                            <img src="./discord-assets/item1.svg" alt="Studying froggy">
+                        <div class="col-70">
+                            <img src="./discord-assets/item1.svg" alt="Study group">
                         </div>
-                        <div class="column-30 bg-pink">TEXT accanto img</div>
+                        <div class="col-30">
+                            <h1>Un luogo a invito con tutto lo spazio necessario per parlare</h1>
+                            <p class="t-pad">I Server Discord sono organizzati in canali tematici in cui puoi collaborare, condividere o semplicemente parlare della tua giornata senza intasare una chat di gruppo.</p>
+                        </div>
                     </div>             
                 </div>    
             </section>
@@ -75,9 +75,12 @@
             <section class="bg-lightgrey">
                 <div class="container">
                     <div class="row reverse">
-                        <div class="column-70 bg-cyan">TEXT accanto img</div>
-                        <div class="column-30 bg-pink">
+                        <div class="col-70">
                             <img src="./discord-assets/item2.svg" alt="Studying froggy">
+                        </div>
+                        <div class="col-30">
+                            <h1>Un luogo a invito con tutto lo spazio necessario per parlare</h1>
+                            <p class="t-pad">I Server Discord sono organizzati in canali tematici in cui puoi collaborare, condividere o semplicemente parlare della tua giornata senza intasare una chat di gruppo.</p>
                         </div>
                     </div>                
                 </div>    
@@ -87,10 +90,13 @@
             <section>
                 <div class="container">
                     <div class="row">
-                        <div class="column-70 bg-cyan">
+                        <div class="col-70">
                             <img src="./discord-assets/item3.svg" alt="Studying froggy">
                         </div>
-                        <div class="column-30 bg-pink">TEXT accanto img</div>
+                        <div class="col-30">
+                            <h1>Un luogo a invito con tutto lo spazio necessario per parlare</h1>
+                            <p class="t-pad">I Server Discord sono organizzati in canali tematici in cui puoi collaborare, condividere o semplicemente parlare della tua giornata senza intasare una chat di gruppo.</p>
+                        </div>
                     </div>                
                 </div>    
             </section>
@@ -99,11 +105,19 @@
             <section class="bg-lightgrey">
                 <div class="container">
                     <div class="row">
-                        <div class="column-100 bg-green">
-                            <h1>TEXT sopra img</h1>
-                            <p>Text sopra img</p>
+                        <div class="col-100">
+                            <div class="col-30">
+                                <h1>Un luogo a invito con tutto lo spazio necessario per parlare</h1>
+                                <p class="t-pad">I Server Discord sono organizzati in canali tematici in cui puoi collaborare, condividere o semplicemente parlare della tua giornata senza intasare una chat di gruppo.</p>
+                            </div>
                             <img src="./discord-assets/item4-big.svg" alt="Studying froggy">
-                            <img src="./discord-assets/stars.svg" alt="stars">
+                            <div class="center relative">
+                                <img src="./discord-assets/stars.svg" alt="stars">
+                                <h1 class="absolute">Pronto ad iniziare la tua avventura?</h1>
+                            </div>
+                            <div class="c-item">
+                                <a href="#" class="login bg-violet">&#8595; Scarica per Mac</a>
+                            </div>
                         </div>
                     </div>                
                 </div>    
@@ -173,16 +187,16 @@
                 </div>    
             </section>
 
-            <section class="bg-lightslategrey u-border">
-                <div class="container no-padding">
-                    <div class="row bg-cyan jc-sbetween space-tb">
-                        <div class="column-20 bg-pink">
-                            <a href="#" class="column-20">
+            <section class="bg-hardgrey u-border">
+                <div class="container">
+                    <div class="row space-tb">
+                        <div>
+                            <a href="#">
                                 <img src="./discord-assets/logo.svg" alt="discord logo">
                             </a>
                         </div>
-                        <div class="column-20 bg-pink">
-                            <a href="#" class="column-20 login">Accedi</a> 
+                        <div>
+                            <a href="#" class="login bg-light">Registrati</a> 
                         </div>
                     </div>             
                 </div>    

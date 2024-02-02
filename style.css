@@ -22,11 +22,8 @@ img{
 .container{
     max-width: 900px;
     margin: 0 auto;
-    min-height: 100px;
+    min-height: 50px;
 }
-
-
-/* Layout */
 
 /* Structure */
 
@@ -35,69 +32,157 @@ img{
     flex-wrap: wrap;
 }
 
-.container{
-    padding: 10px;
+/* HEADER */
+
+.main-header{
+    background-color: #3161E0;
+    padding: 20px;
 }
 
-/* HEADER */
-.main-header{
-    background-image: url(./discord-assets/jumbo.png);
-    background-size: cover;
+.logo, .link, .login{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo{
+    flex-basis:15%;
 }
 
 .link{
     display: flex;
-    align-items: center;
     gap: 30px;
-    justify-content: center;
     color: white;
     flex-grow: 1;
 }
 
 .login{
     border: 1px solid transparent;
-    width: 50px;
+    width: 100px;
     height: 25px;
     border-radius: 30px;
-    font-size: 14px;
+    font-size: 13px;
     color: black;
     background-color: white;
-    justify-content: center;
 }
 
 
 /* MAIN */
 
-.column-80{
-    max-width: 800px;
-}
-
-.text{
-
-}
-
-.iper{
-    border: 1px solid black;
-    border-radius: 30px;
-    font-size: 12px;
-    text-align: center; 
-}
-
-
-/* Prima Sezione */
-
-[class^='column']{
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.bg-img{
+    background-image: url(./discord-assets/jumbo.png);
+    background-size: cover;
 }
 
 .jc-center{
+    display: flex;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
+}
+
+.col-800{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 800px;
+    color: white;
+    padding: 100px;
+}
+
+.xfont{
+    font-size: 60px;
+}
+
+.t-pad{
+    padding-top: 20px;
+}
+
+.choice{
+    display: flex;
+    align-items: center;
+}
+
+
+.bg-white, .bg-black{
+    text-align: center;
+    border-radius: 30px;
+    height: 25px;
+}
+
+.bg-white{
+    background-color: white;
+    color: black;
+    font-size: 13px;
+}
+
+.bg-black{
+    background-color: black;
+    color: white;
+    font-size: 13px;
+}
+
+.col-70, .col-30{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 60px;
+    vertical-align: middle;
+}
+
+.col-70{
+    flex-basis:70%;
+}
+
+.col-30{
+    flex-basis:30%;
+    flex-direction: column;    
 }
 
 .reverse{
     flex-direction: row-reverse;
+}
+
+.col-100{
+    flex-basis: 100%;
+    padding-bottom: 30px;
+}
+
+.center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.absolute{
+    position: absolute;
+}
+
+.relative{
+    position: relative;
+    padding-bottom: 30px;
+}
+
+.c-item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bg-violet{
+    background-color: #8EA1E2;
+    color: white;
+    font-size: 13px;
+    border-radius: 30px;
+    height: 25px;
+}
+
+
+/* FOOTER */
+
+.bg-hardgrey{
+    background-color: #23272A;
 }
 
 .low-pad{
@@ -108,97 +193,14 @@ img{
     border-top: 0.5px solid white;
 }
 
-.no-padding{
-    padding-bottom: 0;
-}
-
-.jc-sbetween{
+.space-tb{
+    padding: 15px 0;
     justify-content: space-between;
 }
 
-.space-tb{
-    padding: 10px 0;
+.bg-light{
+    background-color: #8EA1E2;
+    color: white;
+    font-size: 13px;
+    width: 80px;
 }
-
-
-
-
-
-
-
-
-
-/* DEBUG */
-
-.debug .main-header{
-    background-color: aqua;
-}
-
-.debug .bg-blue{
-    background-color: blue;
-}
-
-.debug .bg-lightgrey, .bg-lightgrey{
-    background-color: lightgrey;
-}
-
-.debug .bg-lightslategrey{
-    background-color: lightslategray;
-}
-
-.debug .bg-yellow{
-    background-color: rgb(255, 191, 0);
-}
-
-.debug .bg-pink{
-    background-color: rgb(219, 122, 138);
-}
-
-.debug .bg-cyan{
-    background-color: cyan;
-}
-
-.debug .bg-green{
-    background-color: green;
-}
-
-.debug .container{
-    border: 2px solid black;
-}
-
-.debug .row{
-    border: 2px solid rgb(255, 1, 1);
-}
-
-.debug [class^='column']{
-    border: 2px dashed rgb(96, 4, 94);
-    padding: 10px;
-    min-height: 100px;
-}
-
-
-.debug .column-20{
-    flex-basis:20%;
-}
-
-.debug .column-30{
-    flex-basis:30%;
-}
-
-.debug .column-40{
-    flex-basis: calc(100% / 2.5);
-}
-
-.debug .column-x{
-    flex-grow: 1;
-}
-
-.debug .column-70{
-    flex-basis: 70%;
-}
-
-.debug .column-100{
-    flex-basis: 100%;
-}
-
-
