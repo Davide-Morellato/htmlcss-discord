@@ -103,7 +103,6 @@ img{
     align-items: center;
 }
 
-
 .bg-white, .bg-black{
     text-align: center;
     border-radius: 30px;
@@ -187,6 +186,19 @@ img{
 
 .low-pad{
     padding-top: 5px;
+}
+
+.jc-c{
+    justify-content: center;
+    align-items: center;
+}
+
+.col-40{
+    flex-basis: 40%;
+}
+
+.col-15{
+    flex-basis: 15%;
 }
 
 .u-border{
