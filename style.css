@@ -36,6 +36,9 @@ header, main{
     font-family: 'Exo 2', sans-serif;
 }
 
+.wave{
+    background-image: url(./discord-assets/wave.svg);
+}
 
 /* HEADER */
 
