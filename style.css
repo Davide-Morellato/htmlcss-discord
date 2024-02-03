@@ -32,6 +32,11 @@ img{
     flex-wrap: wrap;
 }
 
+header, main{
+    font-family: 'Exo 2', sans-serif;
+}
+
+
 /* HEADER */
 
 .main-header{
@@ -45,10 +50,6 @@ img{
     justify-content: center;
 }
 
-.logo{
-    flex-basis:15%;
-}
-
 .link{
     display: flex;
     gap: 30px;
@@ -58,7 +59,7 @@ img{
 
 .login{
     border: 1px solid transparent;
-    width: 100px;
+    width: 110px;
     height: 25px;
     border-radius: 30px;
     font-size: 13px;
@@ -72,6 +73,7 @@ img{
 .bg-img{
     background-image: url(./discord-assets/jumbo.png);
     background-size: cover;
+    background-position: center;
 }
 
 .jc-center{
@@ -87,7 +89,7 @@ img{
     align-items: center;
     max-width: 800px;
     color: white;
-    padding: 150px 0;
+    padding: 100px 0;
     text-align: center;
 }
 
@@ -181,9 +183,10 @@ img{
 .bg-violet{
     background-color: #8EA1E2;
     color: white;
-    font-size: 13px;
+    font-size: 12px;
     border-radius: 30px;
-    height: 25px;
+    height: 34px;
+    font-weight: bolder;
 }
 
 
@@ -225,6 +228,9 @@ h5{
     color: white;
 }
 
+.line-height{
+    line-height: 1.4;
+}
 .color-b{
     color: black;
 }
