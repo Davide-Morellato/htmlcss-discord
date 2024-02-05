@@ -36,17 +36,6 @@ header, main{
     font-family: 'Exo 2', sans-serif;
 }
 
-/* BONUS */
-.wave{
-    background-image: url(./discord-assets/wave.svg);
-    height: 150px;
-    opacity: 0.17;
-}
-
-.fill{
-    background-image: url(./discord-assets/wave.svg);
-    height: 150px;
-}
 
 /* HEADER */
 
@@ -72,7 +61,6 @@ header, main{
     border: 1px solid transparent;
     padding: 8px;
     border-radius: 30px;
-    font-size: 13px;
     color: black;
     background-color: white;
 }
@@ -86,12 +74,12 @@ header, main{
     background-position: center;
 }
 
-
 .center, .col-800{
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    text-align: center;
 }
 
 .col-800{
@@ -255,4 +243,22 @@ h5{
     background-color: #8EA1E2;
     color: white;
     width: 80px;
+}
+
+
+
+
+
+
+
+
+/* BONUS */
+.wave{
+    background-image: url(./discord-assets/wave.svg);
+    height: 150px;
+    opacity: 0.17;
+}
+
+.transform{
+    transform: rotateX(180deg);
 }
