@@ -20,9 +20,9 @@ img{
 }
 
 .container{
+    width: 100%;
     max-width: 900px;
     margin: 0 auto;
-    min-height: 50px;
 }
 
 /* Structure */
@@ -36,8 +36,16 @@ header, main{
     font-family: 'Exo 2', sans-serif;
 }
 
+/* BONUS */
 .wave{
     background-image: url(./discord-assets/wave.svg);
+    height: 150px;
+    opacity: 0.17;
+}
+
+.fill{
+    background-image: url(./discord-assets/wave.svg);
+    height: 150px;
 }
 
 /* HEADER */
@@ -62,8 +70,7 @@ header, main{
 
 .login{
     border: 1px solid transparent;
-    width: 110px;
-    height: 25px;
+    padding: 8px;
     border-radius: 30px;
     font-size: 13px;
     color: black;
@@ -79,21 +86,18 @@ header, main{
     background-position: center;
 }
 
-.jc-center{
+
+.center, .col-800{
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
 }
 
 .col-800{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     max-width: 800px;
     color: white;
     padding: 100px 0;
-    text-align: center;
 }
 
 .xfont{
@@ -110,21 +114,19 @@ header, main{
 }
 
 .bg-white, .bg-black{
-    text-align: center;
     border-radius: 30px;
-    height: 25px;
+    font-weight: bolder;
 }
 
 .bg-white{
     background-color: white;
     color: black;
-    font-size: 13px;
 }
 
 .bg-black{
     background-color: black;
     color: white;
-    font-size: 13px;
+    margin-left: 30px;
 }
 
 .bg-lightgrey{
@@ -161,13 +163,6 @@ header, main{
     padding-bottom: 30px;
 }
 
-.center{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
-
 .absolute{
     position: absolute;
 }
@@ -186,10 +181,7 @@ header, main{
 .bg-violet{
     background-color: #8EA1E2;
     color: white;
-    font-size: 12px;
     border-radius: 30px;
-    height: 34px;
-    font-weight: bolder;
 }
 
 
@@ -234,6 +226,7 @@ h5{
 .line-height{
     line-height: 1.4;
 }
+
 .color-b{
     color: black;
 }
@@ -247,7 +240,6 @@ h5{
 
 .col-15{
     flex-basis: calc(100% / 6);
-    
 }
 
 .u-border{
@@ -262,6 +254,5 @@ h5{
 .bg-light{
     background-color: #8EA1E2;
     color: white;
-    font-size: 13px;
     width: 80px;
 }
